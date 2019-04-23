@@ -72,6 +72,8 @@ class Student
       WHERE name = ?
     SQL
 
-    DB[:conn].execute(sql, name)
+    result = DB[:conn].execute(sql, name)[0]
+
+    Student.new(result[1], result[2], result[0])
   end
 end
