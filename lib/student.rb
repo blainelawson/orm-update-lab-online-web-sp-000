@@ -64,4 +64,7 @@ class Student
 
     student = Student.new(name, grade, id)
   end
+
+  def self.find_by_name
+  end
 end
