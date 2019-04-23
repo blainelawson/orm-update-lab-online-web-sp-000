@@ -7,8 +7,8 @@ class Student
   #  with DB[:conn]
 
   def initialize(name, grade, id=nil)
-    self.name = name,
-    self.grade = grade,
+    self.name = name
+    self.grade = grade
     self.id = id
   end
 
