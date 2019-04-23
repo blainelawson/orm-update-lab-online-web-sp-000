@@ -30,7 +30,7 @@ class Student
     DB[:conn].execute(sql)
   end
 
-  def save
+  def save(name, grade)
     if self.id
       self.update
     else
